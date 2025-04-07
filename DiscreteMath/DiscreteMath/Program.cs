@@ -4,22 +4,28 @@
     {
         static void Main()
         {
-            int n = 6;
-            double density = 0.5;
+            //Ручне тестування
 
-            Graph graph = GraphGenerator.GenerateRandomDAG(n, density);
-            graph.DisplayList(); 
+            //int n = 6;
+            //double density = 0.5;
 
-            
-            TopologicalSorter sorter = new TopologicalSorter();
-            List<int> sorted = sorter.Sort(graph);
+            //Graph graph = GraphGenerator.GenerateRandomDAG(n, density);
+            //graph.DisplayList(); 
 
-            Console.WriteLine("\nТопологічне сортування :");
-            Console.WriteLine(string.Join(" → ", sorted));
-            Graph testGraph = new Graph(4);
-            testGraph.AddEdge(0, 1);
-            testGraph.AddEdge(1, 2);
-            testGraph.AddEdge(2, 3);
+
+            //TopologicalSorter sorter = new TopologicalSorter();
+            //List<int> sorted = sorter.Sort(graph);
+
+            //Console.WriteLine("\nТопологічне сортування :");
+            //Console.WriteLine(string.Join(" → ", sorted));
+            //Graph testGraph = new Graph(4);
+            //testGraph.AddEdge(0, 1);
+            //testGraph.AddEdge(1, 2);
+            //testGraph.AddEdge(2, 3);
+
+            ExperimentRunner.Run();
+            Console.ReadKey();
+
         }
 
     }
